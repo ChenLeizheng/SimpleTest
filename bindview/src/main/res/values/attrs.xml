@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LandleafView">
+        <attr name="cCurProgress" format="integer" />
+        <attr name="cStartAngle" format="integer" />
+        <attr name="cTriangleWidth" format="integer" />
+        <attr name="cTriangleMargin" format="integer" />
+        <attr name="cRadius" format="integer" />
+        <attr name="cLineWidth" format="integer" />
+        <attr name="cBgColor" format="integer" />
+        <attr name="cProgressColor" format="integer" />
+        <!--新加入的属性-->
+        <attr name="cProgressTextSize" format="integer" />
+        <attr name="cRangeTextSize" format="integer" />
+        <attr name="cLevelTextBg" format="integer" />
+        <attr name="cLevelTextSize" format="integer" />
+        <!--文本-->
+        <attr name="cProgressText" format="string" />
+        <attr name="cMinText" format="string" />
+        <attr name="cMaxText" format="string" />
+        <attr name="cLevelText" format="string" />
+        <attr name="cBoundSize" format="integer" />
+        <!--新加入的属性:中文数据类型，英文数据类型-->
+        <attr name="cChineseAttrName" format="string" />
+        <attr name="cEnglishAttrName" format="string" />
+
+        <attr name="cChineseAttrSize" format="integer" />
+        <attr name="cEnglishAttrSize" format="integer" />
+        <!--新加入的属性：三恒界面控件-->
+    </declare-styleable>
+</resources>

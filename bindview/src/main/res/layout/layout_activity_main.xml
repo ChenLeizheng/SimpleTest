@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="user"
+            type="com.lei.bindview.User"/>
+
+        <variable
+            name="progress"
+            type="com.lei.bindview.Progress"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{user.name,default="name"}'/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{user.age+@string/percent,default="age"}'/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:imageUrl="@{user.picUrl}"/>
+
+        <com.lei.bindview.LandleafView
+            app:progress='@{progress}'
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cBoundSize="3"
+            app:cLevelText="舒适"
+            app:cLevelTextSize="18"
+            app:cLineWidth="12"
+            app:cMaxText="30"
+            app:cMinText="0"
+            app:cProgressText="24"
+            app:cProgressTextSize="75"
+            app:cRadius="115"
+            app:cRangeTextSize="15"
+            app:cTriangleWidth="12"
+            />
+    </LinearLayout>
+</layout>
